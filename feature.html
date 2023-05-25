@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feature</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	<style>
+		/* Add any CSS styles you want here */
+		*{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        }
+        body{
+            font-family: Courier New;
+        }
+        nav{
+            background: #111;
+          
+        }
+		label.logo{
+            color: white;
+            font-size: 35px;
+            line-height: 50px;
+            padding-left: 50px;
+            font-weight: bold;
+		}
+		nav ul{
+            float: right;
+            margin: right;
+        }
+        nav ul li {
+            display: inline-block;
+            line-height: 50px;
+            margin: 0 5px;
+        }
+        nav ul li 
+        {
+
+            color: #fff5f5;
+            font-size: 17px;
+            font-weight: bold;
+            padding: 0;
+            border-radius: 3px;
+
+        }
+        a.active,a:hover{
+    transition: all 0.6s;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: var(--secondary-color-dark);
+        }
+        .container img {
+  width: 20%;
+  height: 20%;
+        }
+        .container-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+.container-text h3 {
+  font-size: 80px; /* Adjust the font size as needed */
+  margin-bottom: 10px;
+}
+.image-container {
+  text-align: center;
+}
+
+.image {
+  width: 800px;
+  height: 350px;
+}
+
+.image-caption {
+  font-size: 14px;
+  color: #333;
+}
+.main-topic .h1 {
+  text-align: center;
+}
+/*Banner image style*/
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1rem;
+}
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color:white;
+}
+
+.banner-text h1 {
+  font-size: 65px;
+  margin-bottom: 10px;  
+}
+.banner-text h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 1000px;
+}
+/*end of Banner image style*/
+    </style>
+<body>
+	<div id = "NavBar">
+  <nav>
+	 <label class = "logo">WeLearn</label>
+	  <ul>
+		<li><a href="index.html" target="_self">Home</a></li>
+		<li><a href="" target="_self">Features</a></li>
+		<li><a href="Blog.html" target="_self">Blog</a></li>
+	    <li><a href="AboutUs.html" target="_self">About </a></li>
+	  </ul>
+  </nav>
+	</div>
+  <!-- banner section -->
+	<div class="banner">
+		<img src="Webtecban.jpg" alt="Banner Image">
+		<div class="banner-text">
+		  <h1>WEB TECHNOLOGY</h1>
+      <h3>Web Technology refers to the various tools and techniques that are utilized in the process of communication between different types of devices over the Internet. A web browser is used to access web pages. Web browsers can be defined as programs that display text, data, pictures, animation, and video on the Internet. Hyperlinked resources on the World Wide Web can be accessed using software interfaces provided by Web browsers.</h3>
+	  </div>
+  </div>
+   <!-- topic1 section -->
+  <section class="topic1" id="topic1">
+    <div class="main-topic">
+  <h2>Web Technology can be classified into the following sections:</h2>
+  <ul>
+  <li><b>World Wide Web (WWW):</b> - The World Wide Web is based on several different technologies: Web browsers, Hypertext Markup Language (HTML), and Hypertext Transfer Protocol (HTTP). </li>
+  <li><b>Web Browser: </b> - The web browser is an application software to explore www (World Wide Web). It provides an interface between the server and the client and requests to the server for web documents and services. </li>
+  <li><b>Web Server:</b> - Web server is a program which processes the network requests of the users and serves them with files that create web pages. This exchange takes place using Hypertext Transfer Protocol (HTTP). </li>
+  <li><b>Web Pages:</b> -A webpage is a digital document that is linked to the World Wide Web and viewable by anyone connected to the internet has a web browser.</li>
+  <li><b>Web Development: </b> - Web development refers to the building, creating, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management. It is the creation of an application that works over the internet i.e. websites. </li>
+  </ul>
+  <h2>Web Development can be classified into two ways:</h2>
+  <ul>
+  <li><b>Frontend Development: </b> - The part of a website that the user interacts directly is termed as front end. It is also referred to as the ‘client side’ of the application.</li>
+  </ul>
+<div class="image">
+  <img src="topic1.png" alt="frontend Image">
+  </div>
+  <li><b>Backend Development: </b> - Backend is the server side of a website. It is the part of the website that users cannot see and interact. It is the portion of software that does not come in direct contact with the users. It is used to store and arrange data.
+  </ul>
+<section class="topic1" id="topic1">
+<div class="image">
+  <img src="topic2.jpeg" alt="Backend Image">
+  </div>
+</div>
+<style>
+  .topic1 h2{
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .topic1 ul {
+    margin-bottom: 1rem;
+  }
+.topic1 .image img {
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+</style>
+ <!-- topic section -->
+ <section class="topic" id="topic">
+  <div class="main-text">
+      <h2>Other Subjects you might interested: </h2>
+  </div>
+  <div class="topic-content">
+      <div class="box">
+          <div class="s-icons">
+              <i class="bx bx-mobile-alt"></i>
+          </div>
+          <h3>Computer Programming</h3>
+          <p>Computer programming is the process of performing a particular computation (or more generally, accomplishing a specific computing result), usually by designing and building an executable computer program.</p>
+            <a href="Topics.html" class="read">Read More</a>
+      </div>
+      <div class="box">
+          <div class="s-icons">
+              <i class="bx bx-code-alt"></i>
+          </div>
+          <h3>Object-Oriented Programming</h3>
+          <p>Object-oriented programming is about modeling a system as a collection of objects, where each object represents some particular aspect of the system. Objects contain both functions (or methods) and data. </p>
+          <a href="Topics.html" class="read">Read More</a>
+      </div>
+    </section>
+
+    <style>
+      /* style of topic section */
+.topic{
+background: var(--second-bg-color);
+
+}
+.main-text{
+text-align: center;
+margin-top: 2.5rem;
+}
+.main-text p{
+color: var(--second-color);
+font-size: 15px;
+margin-bottom: 15px;
+}
+.main-text h2{
+margin-bottom: 0px;
+margin-top: 2rem;
+}
+.topic-content{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+align-items: center;
+gap: 2.5rem;
+margin-top: 5rem;
+}
+.box{
+background: Gray;
+padding: 35px 45px;
+border-radius: 8px;
+transition: all .45s ease;
+margin-bottom: 2rem;
+}
+.s-icons i{
+font-size: 32px;
+margin-bottom: 20px;
+}
+.box h3{
+font-size: 24px;
+font-weight: 600;
+color: var(--text-color);
+margin-bottom: 15px;
+}
+.box p{
+color: var(--second-color);
+font-size: 1rem;
+line-height: 1.8;
+margin-bottom: 25px;
+}
+.read{
+display: inline-block;
+padding: 8px 18px;
+background: #333333;
+color: var(--second-color);
+font-size: 14px;
+font-weight: 500;
+border-radius: 8px;
+transition: all .45s ease;
+}
+.read:hover{
+letter-spacing: 1px;
+background: #ffffff99;
+color: var(--text-color);
+}
+.box:hover{
+transform: translateY(-9px);
+cursor: pointer;
+}
+/* end of topic section */
+    </style>
+ <!-- footer section -->
+ <footer>
+  <div class="footer_container">
+      <div class="footer_element">
+          <span class="copyright"><em>© All rights reserved.</em></span>
+  </div>
+</div>
+</footer>
+<style>
+footer {
+width: 100%;
+padding: 20px 0;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+background-color: black;
+font: #fff
+}
+.copyright {
+color: white;
+font-family: 'Poppins', sans-serif;
+}
+</style>
+<!-- end of footer section -->
+</body>
+</html>
+      

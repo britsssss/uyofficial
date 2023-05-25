@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WeLearn</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		/* Add any CSS styles you want here */
+		*{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        }
+        body{
+            font-family: Courier New;
+        }
+        nav{
+            background: #111;
+          
+        }
+		label.logo{
+            color: white;
+            font-size: 35px;
+            line-height: 50px;
+            padding-left: 50px;
+            font-weight: bold;
+		}
+		nav ul{
+            float: right;
+            margin: right;
+        }
+        nav ul li {
+            display: inline-block;
+            line-height: 50px;
+            margin: 0 5px;
+        }
+        nav ul li {
+            color: #fff5f5;
+            font-size: 17px;
+            font-weight: bold;
+            padding: 0;
+            border-radius: 3px;
+
+        }
+        a.active,a:hover {
+            transition: all 0.6s;
+            border-radius: 20px;
+            padding: 10px;
+            background-color: var(--secondary-color-dark);
+        }
+/*Banner image style*/
+
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.banner-text h1 {
+  font-size: 65px;
+  margin-bottom: 10px;  
+}
+.banner-text p {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* style of activities section */
+.activities-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+.activities h2{
+  text-align: center;
+  margin-top: 2rem;
+}
+  .row{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.row img{
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.1), #2ecc71);
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+}
+.layer h5{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.layer i{
+    color: var(--min-color);
+    margin-top: 20px;
+    font-size: 20px;
+    background: var(--text-color);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.row:hover img{
+    transform: scale(1.1);
+}
+.row:hover .layer{
+    height: 70%;
+}
+/* end of Activities section */
+/* style of topic section */
+.topic{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 4rem;
+}
+.topic-img img{
+    max-width: 630px;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+
+}
+.topic-text h4{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: 1.7;
+    margin: 10px 0 30px;
+}
+.topic-text p{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.9;
+    margin-bottom: 4rem;
+}
+/* end of topic section */
+
+		</style>
+<body>
+</div>
+	<div id = "NavBar">
+  <nav>
+	 <label class = "logo">WeLearn</label>
+	  <ul>
+		<li><a href="" target="_self">Home</a></li>
+		<li><a href="feature.html" target="_self">Features</a></li>
+		<li><a href="Blog.html" target="_self">Blog</a></li>
+		  <li><a href="AboutUs.html" target="_self">About </a></li>
+	  </ul>
+  </nav>
+	</div>
+   <!-- banner section -->
+	<div class="banner">
+		<img src="gZl8v7.webp" alt="Banner Image">
+		<div class="banner-text">
+		  <h1>Welcome to WeLearn!</h1>
+		  <p>where you can learn for free.</p>
+		</div>
+	  </div>
+  </div>
+   <!-- Banner section -->
+   <!-- Topic section -->
+     <section class="topic" id="topic">
+      <div class="topic-img">
+          <img src="wtopic.jpg">
+      </div>
+      <div class="topic-text">
+
+          <h4>Web Technology</h4>
+          <p>Web Technology refers to the various tools and techniques that are utilized in the process of communication between different types of devices over the Internet. A web browser is used to access web pages. Web browsers can be defined as programs that display text, data, pictures, animation, and video on the Internet. Hyperlinked resources on the World Wide Web can be accessed using software interfaces provided by Web browsers.
+          <a href="feature.html" class="btn">Read More</a>
+      </div>
+     </section>
+     <!-- end of about section -->
+	   <!-- Topic section -->
+
+     <!-- activities section -->
+     <section class="activities" id="activities">
+      <div class="main-text">
+         
+          <h2><span>Activities</span></h2>
+      </div>
+      <div class="activities-content">
+          <div class="row">
+              <img src="copro.JPG">
+              <div class="layer">
+                  <h5>Computer Programming</h5>
+                  <p>Check out my Prelim and Midterm Activities.</p>
+                  <a href="Blog.html">Press Here<i class="bx bx-link-external"></i></a>
+              </div>
+          </div>
+          <div class="row">
+              <img src="webtec.jpg">
+              <div class="layer">
+                  <h5>Web Technology</h5>
+                  <p>Check out my Prelim and Midterm Activities.</p>
+                  <a href="Blog.html">Press Here<i class="bx bx-link-external"></i></a>
+              </div>
+          </div>
+          <div class="row">
+              <img src="oop.png">
+              <div class="layer">
+                  <h5>Object-Oriented Programming</h5>
+                  <p href="Blog.html">Check out my Prelim and Midterm Activities.</p>
+                  <a href="Blog.html">Press Here<i class="bx bx-link-external"></i></a>
+              </div>
+          </div>
+      </div>
+     </section>
+     <!-- end of Activities section -->
+     <!-- footer section -->
+     <footer>
+        <div class="footer_container">
+            <div class="footer_element">
+                <span class="copyright"><em>© All rights reserved.</em></span>
+        </div>
+    </div>
+     </footer>
+     <style>
+footer {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    font: #fff
+}
+.copyright {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+     </style>
+     <!-- end of footer section -->
+</body>
+</html>

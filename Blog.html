@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		/* Add any CSS styles you want here */
+		*{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        }
+        body{
+            font-family: Courier New;
+            background: gray;
+        }
+        nav{
+            background: #111;
+          
+        }
+		label.logo{
+            color: white;
+            font-size: 35px;
+            line-height: 50px;
+            padding-left: 50px;
+            font-weight: bold;
+		}
+		nav ul{
+            float: right;
+            margin: right;
+        }
+        nav ul li {
+            display: inline-block;
+            line-height: 50px;
+            margin: 0 5px;
+        }
+        nav ul li 
+        {
+
+            color: #fff5f5;
+            font-size: 17px;
+            font-weight: bold;
+            padding: 0;
+            border-radius: 3px;
+
+        }
+        a.active,a:hover{
+    transition: all 0.6s;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: var(--secondary-color-dark);
+        }
+    </style>
+<body>
+	<div id = "NavBar">
+  <nav>
+	 <label class = "logo">WeLearn</label>
+	  <ul>
+		<li><a href="index.html" target="_self">Home</a></li>
+		<li><a href="feature.html" target="_self">Features</a></li>
+		<li><a href="" target="_self">Blog</a></li>
+	    <li><a href="AboutUs.html" target="_self">About</a></li>
+	  </ul>
+  </nav>
+	</div>
+  <!-- activity section -->
+   <section class="activities" id="activities">
+    <h1> Computer Programming Activities</h1>
+    <div class="activities-content">
+        <div class="row">
+            <img src="cp1.png">
+            <div class="layer">
+                <h3>Prelim</h3>
+                <p>In this activity, I made a registration form.</p>
+                </div>
+        </div>
+        <div class="row">
+            <img src="cm1.png">
+            <div class="layer">
+                <h3>Midterm</h3>
+                <p>In this activity, I made a program that will identify how much money will the caller gonna pay in every minutes</p>
+                </div>
+        </div>
+        </div>
+
+   <h1> Web Technology Activities</h1>
+   <div class="activities-content">
+    <div class="row">
+        <img src="wp2.png">
+        <div class="layer">
+            <h3>Prelim</h3>
+            <p>In this activity, I made a homepage that will show the navigation bar, body and footer in different colors.</p>
+            </div>
+    </div>
+    <div class="row">
+        <img src="wm1.png">
+        <div class="layer">
+            <h3>Midterm</h3>
+            <p>In this activity, I made a webpage that will allow user to input her/his firstname and lastname.</p>
+            </div>
+    </div>
+    </div>
+   <h1> object-Oriented Activities</h1>
+   <div class="activities-content">
+    <div class="row">
+        <img src="oopp1.png">
+        <div class="layer">
+            <h3>Prelim</h3>
+            <p>In this activity, it will determined what is the area of the square and circle.</p>
+            </div>
+    </div>
+    <div class="row">
+        <img src="oopm1.png">
+        <div class="layer">
+            <h3>Midterm</h3>
+            <p>In this activity, I made a program that will automatically view what department I am.</p>
+            </div>
+    </div>
+    </div>
+    </div>
+</section>
+    <!-- activity section -->
+    <style>
+        .activities {
+            text-align: center;
+            display: grid;
+        
+        }
+        h1{
+            margin-top: 1rem;
+        }
+        .activities-content img {
+            width: 300px;
+            height: 300px;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            gap: 4rem;
+            margin-left: 30%;
+            margin-right: 50%;
+        }
+        .activities-content{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            gap: 4rem;
+            margin-top: 2rem;
+            margin-right: 2.5rem;
+            margin-left: 2.5rem;
+  }
+</style>      
+ <!-- footer section -->
+ <footer>
+    <div class="footer_container">
+        <div class="footer_element">
+            <span class="copyright"><em>© All rights reserved.</em></span>
+    </div>
+</div>
+ </footer>
+ <style>
+footer {
+width: 100%;
+padding: 20px 0;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+background-color: black;
+font: #fff
+}
+.copyright {
+color: white;
+font-family: 'Poppins', sans-serif;
+}
+ </style>
+ <!-- end of footer section -->
+
+</body>
+</html>

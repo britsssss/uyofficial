@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ABout Us</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		/* Add any CSS styles you want here */
+		*{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        }
+        body{
+            font-family: Courier New;
+        }
+        nav{
+            background: #111;
+          
+        }
+		label.logo{
+            color: white;
+            font-size: 35px;
+            line-height: 50px;
+            padding-left: 50px;
+            font-weight: bold;
+		}
+		nav ul{
+            float: right;
+            margin: right;
+        }
+        nav ul li {
+            display: inline-block;
+            line-height: 50px;
+            margin: 0 5px;
+        }
+        nav ul li {
+            color: #fff5f5;
+            font-size: 17px;
+            font-weight: bold;
+            padding: 0;
+            border-radius: 3px;
+
+        }
+        a.active,a:hover {
+            transition: all 0.6s;
+            border-radius: 20px;
+            padding: 10px;
+            background-color: var(--secondary-color-dark);
+        }
+
+        .image-container{
+    text-align: center;
+}
+    .image {
+  width: 200px;
+  height: 150px;
+    }
+    .image-container h3{
+        font-size: 40px;
+    }
+    .image-container p{
+        font-size: 20px;
+    }
+    /**/
+#comments-section {
+  margin-top: 10px;
+}
+
+#comment-input {
+  width: 100%;
+}
+
+#comments {
+  margin-bottom: 5px;
+}
+
+.comment {
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+}
+  /* footer */
+footer {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+footer .footer_container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 30px 0;
+}
+
+footer .footer_container .footer_element h4 {
+    color: white;
+    font-family: 'Bungee', sans-serif;
+    text-align: center;
+    cursor: default;
+}
+
+
+footer .footer_container .footer_element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+footer .footer_container .footer_element span, a {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.copyright {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+ /*end of footer */
+
+
+</style>
+        <body>
+</div>
+	<div id = "NavBar">
+  <nav>
+	 <label class = "logo">WeLearn</label>
+	  <ul>
+		<li><a href="index.html" target="_self">Home</a></li>
+		<li><a href="feature.html" target="_self">Features</a></li>
+		<li><a href="Blog.html" target="_self">Blog</a></li>
+		  <li><a href="" target="_self">About </a></li>
+	  </ul>
+  </nav>
+	</div>
+
+    </div>
+    <div class="image-container">
+        <h3>ABOUT </h3>
+        <img src="IMG_3599.jpg" alt="Gradpic Image" class="image">
+        <p>britniuy10@gmail.com / Minglanilla Cebu</p>
+        <h3>My Story</h3>
+         <p>At WeLearn, a passionate student who believes in the transformative power of education. As a student myself, I recognized the challenges faced by individuals who couldn't afford to attend school due to financial constraints.
+        <h3>My Mission</h3>
+        <p>My mission is to improve access to quality education for free.</p>
+        <h3>Get Involve</h3>
+        <p>I believe that everyone has a role to play in improving education in our communities. There are many ways you can get involved with WeLearn, including be part of my journey and spreading the word about our programs and services. Join me in my mission to create a more equitable and just society through education.</p>
+    </div>
+    <div id="comments-section">
+        <h2>Comments</h2>
+        <div id="comments"></div>
+        
+        <h3>Add a Comment</h3>
+        <form id="comment-form">
+          <textarea id="comment-input" rows="4" placeholder="Write your comment"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              // Get the comment form and comments section elements
+              const commentForm = document.getElementById("comment-form");
+              const commentsSection = document.getElementById("comments");
+            
+              // Add an event listener to the comment form on submit
+              commentForm.addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevent the default form submission behavior
+            
+                // Get the comment input value
+                const commentInput = document.getElementById("comment-input");
+                const commentText = commentInput.value;
+            
+                if (commentText.trim() !== "") {
+                  // Create a new comment element
+                  const commentElement = document.createElement("div");
+                  commentElement.classList.add("comment");
+                  commentElement.textContent = commentText;
+            
+                  // Append the new comment element to the comments section
+                  commentsSection.appendChild(commentElement);
+            
+                  // Clear the comment input
+                  commentInput.value = "";
+                }
+              });
+            });
+            </script>
+            
+      </div>
+      <footer>
+        <div class="footer_container">
+            <div class="footer_element">
+                <h4>Get in touch</h4>
+                <h4>britniuy10@gmail.com</h4>
+            </div>
+            <div class="footer_element">
+                <h4>Social</h4>
+                <span><a href="https://www.facebook.com/britni.uy.1/"><i class="facebook"></i> Facebook</a></span>
+                <span><a href="https://twitter.com/Bigart_00"><i class="twitter"></i> Twitter</a></span>
+                <span><a href="https://www.instagram.com/uybrits/"><i class="instagram"></i> Instagram</a></span>
+            </div>
+            <div class="footer_element">
+                <h4>Contact:</h4>
+                <h4>09957681322</h4>
+            </div>
+        </div>
+        <div class="footer_element">
+            <span class="copyright"><em>©2023 Britni Uy</em></span>
+        </div>
+</body>
+</html>
